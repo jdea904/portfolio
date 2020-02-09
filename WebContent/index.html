@@ -63,10 +63,16 @@
           <a class="nav-link js-scroll-trigger" href="#Project1_Diagrams">Project1_Diagrams</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Project1_Storyboard">Project1_Storyboard</a>
+          <a class="nav-link js-scroll-trigger" href="#Project1_Storyboard">Project1_Storyboards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Project2">Project2</a>
+          <a class="nav-link js-scroll-trigger" href="#Project2">Project2_Summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Project2_Diagrams">Project2_Diagrams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Project2_Storyboard">Project2_Storyboards</a>
         </li>
       </ul>
     </div>
@@ -238,13 +244,7 @@
 				9. 구글 지도 API<br>
 				10. 반응형웹 구현(부트스트랩 이용) </p>
 				
-            <h5 class="mb-0">DB설계</h5>
-            <div style="min-height:430px">
-            <div style="position: absolute; top:0; left: 0;width: 100%;height: 100%;">
-            </div>
-            <img src="img/지오짐 ERD 큰버전.png"/>
-            </div>
-            <br>
+            
             <h5 class="mb-0">담당역할</h5>
             <p>1. 마이페이지<br>
 				2. 트레이너전용 담당회원 관리 페이지<br>
@@ -284,6 +284,16 @@
     		<h2 class="mb-5">Project1_Diagrams</h2>
     	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     		<div class="resume-content">
+    		
+    			<div class="subheading mb-3">ERD</div>
+    				<table class="table table-bordered">
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/지오짐 ERD 큰버전.png"/></div>
+    						</td>
+    					</tr>
+    				</table>
+    			<br>
     			<div class="subheading mb-3">Class Diagram</div>
     				<table class="table table-bordered">
     					<tr>
@@ -359,16 +369,22 @@
     	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     		<div class="resume-content">
     		
+    		
+    		
     		<div class="subheading mb-3">마이페이지_신체정보관리</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/마이페이지1.png"/></div></td>
+					<td colspan="2"><div><img style="width:100%" src="img/geogym/마이페이지1.png"/></div></td>
 				</tr>
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/마이페이지2.png"/></div></td>
+					<td colspan="2"><div><img style="width:100%" src="img/geogym/마이페이지2.png"/></div></td>
 				</tr>
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/마이페이지3.png"/></div></td>
+					<td colspan="2"><div><img style="width:100%" src="img/geogym/마이페이지3.png"/></div></td>
+				</tr>
+				<tr>
+					<td><div><img style="width:350px" src="img/geogym/마이페이지4.png"/></div></td>
+					<td><div><img style="width:350px" src="img/geogym/마이페이지5.png"/></div></td>
 				</tr>
 				<tr>
 					<td colspan="2"><strong>화면 설명</strong><br>
@@ -380,13 +396,16 @@
 				<tr>
 					<td colspan="2"><strong>구현기능설명</strong><br>
 						<p>
-						1. 업로드한 프로필사진 노출(commons_fileupload 사용)<br>
+						1. 업로드한 프로필사진 노출( commons_fileupload 사용 )<br>
 						2. 회원 개인 정보 노출<br>
-						3. 신체 변화량 7일단위 / 30일단위로 노출. LocalDate타입을 사용해 선택 단위마다 한건씩 조회해 차트에 반영(구글차트API사용)<br>
+						3. 신체 변화량 7일단위 / 30일단위로 노출. LocalDate타입을 사용해 선택 단위마다 한건씩 조회해 차트에 반영( 구글차트API사용 )<br>
 						4. 조회된 결과가 차트로 노출됨. 키 정보는 slide토글을 사용해 가리기 가능<br>
-						5. 트레이너가 담당중인 회원의 프로필 사진 노출(commons_fileupload 사용)<br>
-						6. 담담중인 회원의 신체정보외에도 해당 회원의 특이사항 노출(트레이너만 확인 가능)<br>
-						7. 트레이너가 첨부한 담당회원의 inbody 사진 팝업으로 노출
+						5. 트레이너가 담당중인 회원의 프로필 사진 노출( commons_fileupload 사용 )<br>
+						6. 담담중인 회원의 신체정보외에도 해당 회원의 특이사항 노출( 트레이너만 확인 가능 )<br>
+						7. 트레이너가 첨부한 담당회원의 inbody 사진 팝업으로 노출<br>
+						8. 신체정보 입력 폼( 하루에 한번만 입력 가능 )<br>
+						9. 회원의 특이사항 입력 폼( 트레이너만 입력 및 조회가 가능 / 트레이너일 경우에만 노출 )<Br>
+						10. 해당 회원 inbody 사진 업로드 가능( 하루에 한번만 입력 가능 )
 						</p>
 					</td>
 				</tr>
@@ -395,8 +414,7 @@
 			<div class="subheading mb-3">반응형웹</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:350px" src="img/지오짐 반응형웹.png"/></div></td>
-					<td><div><img style="width:350px" src="img/지오짐 반응형웹2.png"/></div></td>
+					<td><div><img style="width:100%" src="img/geogym/반응형웹1.png"/></div></td>
 				</tr>
 				<tr>
 					<td colspan="2"><strong>화면 설명</strong><br>
@@ -407,7 +425,7 @@
 					<td colspan="2"><strong>구현기능설명</strong><br>
 						<p>
 						1. 현재 사용중인 디스플레이 해상도에 맞춰 반응하는 반응형 웹 구현<br>
-						2. 스마트폰 사용에 최적화 될 수 있도록 레이아웃을 구성함
+						2. 차트 역시 해상도 크기에 맞춰 크기 변경
 						</p>
 					</td>
 				</tr>
@@ -416,24 +434,35 @@
 			<div class="subheading mb-3">게시판</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:233px" src="img/지오짐 QnA List.png"/></div></td>
-					<td><div><img style="width:233px" src="img/지오짐 QnA view.png"/></div></td>
-					<td><div><img style="width:233px" src="img/지오짐 QnA write.png"/></div></td>
+					<td><div><img style="width:100%" src="img/geogym/게시판1.png"/></div></td>
 				</tr>
 				<tr>
-					<td colspan="3"><strong>화면 설명</strong><br>
-						<p>사이트 회원들의 질문을 묻고 답할 수 있는 QnA 게시판</p>
+					<td><div><img style="width:100%" src="img/geogym/게시판2.png"/></div></td>
+				</tr>
+				<tr>
+					<td><div><img style="width:100%" src="img/geogym/게시판3.png"/></div></td>
+				</tr>
+				<tr>
+					<td><strong>화면 설명</strong><br>
+						<p>상단 : QnA 게시판 게시글 목록<br>
+						중단 : 게시글 상세보기<br>
+						하단 : 게시글 작성</p>
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3"><strong>구현기능설명</strong><br>
+					<td><strong>구현기능설명</strong><br>
 						<p>
-						1. 한 페이지당 10개씩 게시글이 노출 되도록 페이징 구현<br>
-						2. 글 작성시 공개여부 설정 가능<br>
-						3. 제목, 내용, 제목+내용으로 검색 가능하도록 구현<br>
-						4. 자신이 쓴 질문글에 답변 등록시 알림이 오도록 구현<br>
-						5. 질문글 작성시 사진 업로드가 가능하도록 구현함. 답변하는 관리자 역시 사진업로드가 가능하도록 구현<br>
-						6. 질문글 작성은 CKEditor로 구현
+						1. 한 페이지당 10개씩 게시글 노출<br>
+						2. 질문글 작성시 비공개로 설정했을 경우<br>
+						3. 질문글 작성시 공개글로 설정했을 경우<br>
+						4. 10페이지씩 이동 가능하도록 페이지네이션 구현<br>
+						5. 제목, 작성자, 내용으로 검색 가능<br>
+						6. 글 작성자일 경우에만 수정 / 삭제 가능<br>
+						7. 사이트 관리자 or 트레이너일 경우 댓글 형식으로 답글 작성 가능<br>
+						8. 답변 작성시 사진 첨부 가능<br>
+						9. CKEditor로 게시글 작성 구현<br>
+						10. 질문글 작성시에도 사진 첨부 가능<br>
+						11. 글 작성시 공개여부 설정 가능
 						</p>
 					</td>
 				</tr>
@@ -485,73 +514,6 @@
 				2. 메인페이지<br>
 				3. 파일 업로드 / 다운로드
 				</p>
-				
-			<h5>담당 구현 페이지</h5>
-			<table class="table table-bordered">
-				<tr>
-					<td><div><img style="width:700px" src="img/방캅스 - 메인페이지.png"/></div></td>
-				</tr>
-				<tr>
-					<td colspan=""><strong>화면 설명</strong><br>
-						<p>사이트 메인페이지 및 하단 통계</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan=""><strong>구현기능설명</strong><br>
-						<p>
-						1. 시/구/상세주소로 검색 가능하게 구현<br>
-						2. 검색창 하단 통계(오늘의 신고건수, 전체 신고건수) 노출<br>
-						3. 검색시 신고 게시판의 검색 List로 자동으로 이동 후 결과 노출<br>
-						4. 구 별 신고건수 현황은 구글 차트 API를 활용하여 구현함. 신고테이블을 구 별로 GROUP BY 하여 COUNT 한 결과가 차트에 반영됨
-						</p>
-					</td>
-				</tr>
-			</table>
-			
-			<table class="table table-bordered">
-				<tr>
-					<td><div><img style="width:700px" src="img/방캅스 - 커뮤니티 메인.png"/></div></td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>화면 설명</strong><br>
-						<p>각 게시판으로 이동 하기 전에 사이트 전체의 커뮤니티 현황을 볼 수 있는 커뮤니티 메인페이지</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>구현기능설명</strong><br>
-						<p>
-						1. 각 게시판의 게시글 목록을 다섯 개씩 노출하도록 구현<br>
-						2. 공지사항 - 최신순, <br>자유게시판, 이용후기게시판 - 추천순으로 노출
-						</p>
-					</td>
-				</tr>
-			</table>
-			
-			<table class="table table-bordered">
-				<tr>
-					<td><div><img style="width:350px" src="img/방캅스 - 게시판 게시글 목록.png"/></div></td>
-					<td><div><img style="width:350px" src="img/방캅스 - 게시판 게시글 상세보기.png"/></div></td>
-				</tr>
-				<tr>
-					<td colspan="3"><strong>화면 설명</strong><br>
-						<p>게시판 게시글 목록 및 게시글 상세보기</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3"><strong>구현기능설명</strong><br>
-						<p>
-						1. 게시글 목록에 번호, 제목, 작성자, 작성일자, 조회수, 추천수 노출<br>
-						2. 목록을 20개씩 나열하도록 페이징 구현, 제목 옆에 댓글수 표시<br>
-						3. 게시글 추천시 페이지가 새로고침되지 않도록 AJAX를 사용해 구현<br>
-						4. 게시글 작성시 파일 업로드 가능 (제한 용량 10MB로 설정해 구현)<br>
-						5. 게시글 작성자일 경우 게시글 수정, 삭제 가능<br>
-						6. 댓글기능 구현, 댓글이 나타나는 부분은 슬라이드토글을 사용해 가리기 가능<br>
-						7. 검색은 제목, 작성자, 내용으로 검색 가능<br>
-						8. 게시글 작성은 CKEditor로 구현
-						</p>
-					</td>
-				</tr>
-			</table>
 			
 			<h5>참여소감</h5>
 			<p>
@@ -572,6 +534,140 @@
 
       </div>
 
+    </section>
+
+	<hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="Project2_Diagrams">
+    <div class="w-100">
+    		<h2 class="mb-5">Project2_Diagrams</h2>
+    	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+    		<div class="resume-content">
+    		
+    			<div class="subheading mb-3">ERD</div>
+    				<table class="table table-bordered">
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/방캅스 ERD.png"/></div>
+    						</td>
+    					</tr>
+    				</table>
+    			<br>
+    			<div class="subheading mb-3">Class Diagram</div>
+    				<table class="table table-bordered">
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 클다 게시판.png"/></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 클다 댓글.png"/></div>
+    						</td>
+    					</tr>
+    				</table>
+    				<br>
+    			<div class="subheading mb-3">Sequence Diagram</div>
+    				<table>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판1.png"/></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판2.png"/></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판3.png"/></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판4.png"/></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 댓글.png"/></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td>
+    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 메인.png"/></div>
+    						</td>
+    					</tr>
+    				</table>
+    		</div>
+    	</div>
+    </div>
+    </section>
+
+	<hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="Project2_Storyboard">
+    <div class="w-100">
+    		<h2 class="mb-5">Project2_Storyboards</h2>
+    	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+    		<div class="resume-content">
+    		
+    		
+    		
+    		<div class="subheading mb-3">메인페이지</div>
+			<table class="table table-bordered">
+				<tr>
+					<td><div><img style="width:700px" src="img/방캅스 - 메인페이지.png"/></div></td>
+				</tr>
+				<tr>
+					<td colspan=""><strong>화면 설명</strong><br>
+						<p>사이트 메인페이지 및 하단 통계</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=""><strong>구현기능설명</strong><br>
+						<p>
+						1. 시/구/상세주소로 검색 가능하게 구현<br>
+						2. 검색창 하단 통계(오늘의 신고건수, 전체 신고건수) 노출<br>
+						3. 검색시 신고 게시판의 검색 List로 자동으로 이동 후 결과 노출<br>
+						4. 구 별 신고건수 현황은 구글 차트 API를 활용하여 구현함. 신고테이블을 구 별로 GROUP BY 하여 COUNT 한 결과가 차트에 반영됨
+						</p>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<div class="subheading mb-3">커뮤니티</div>
+			<table class="table table-bordered">
+				<tr>
+					<td><div><img style="width:700px" src="img/방캅스 - 커뮤니티 메인.png"/></div></td>
+				</tr>
+				<tr>
+					<td><div><img style="width:700px" src="img/방캅스 - 게시판 게시글 목록.png"/></div></td>
+				</tr>
+				<tr>
+					<td><div><img style="width:700px" src="img/방캅스 - 게시판 게시글 상세보기.png"/></div></td>
+				</tr>
+				<tr>
+					<td><strong>화면 설명</strong><br>
+						<p>상단 : 사이트 전체의 커뮤니티 현황을 볼 수 있는 커뮤니티 메인페이지<br>
+						중단 : 게시글 목록 페이지<br>
+						하단 : 게시글 상세보기 페이지</p>
+					</td>
+				</tr>
+				<tr>
+					<td><strong>구현기능설명</strong><br>
+						<p>
+						1. 각 게시판의 게시글 목록을 다섯 개씩 노출하도록 구현<br>
+						2. 공지사항 - 최신순, <br>자유게시판, 이용후기게시판 - 추천순으로 노출
+						</p>
+					</td>
+				</tr>
+			</table>
+
+    	</div>
+    	</div>
+    	</div>
     </section>
 
   </div>
