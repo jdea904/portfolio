@@ -30,18 +30,55 @@
 $(function () {
 	$('#popover1_1[data-toggle="popover"]').popover({
         placement : 'top',
-        trigger : 'click',
+        trigger : 'hover',
         html : true,
-        content : '<div style="width:content-fit" class="media"><img src="img/신체정보 주요 코드.png" class="media-object" alt="Sample Image"></div>'
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/나의 프로필사진 조회.png" class="media-object" alt="Sample Image"></div>'
     });
+	
+	$('#popover1_2[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/나의 신체정보조회.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover1_3[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/이미지 업로드.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover1_4[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/신체정보 주요 코드.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	
+	
     })
     
     
     
 </script>
 <style type="text/css">
+
 .popover{
-    max-width: 100%; /* Max Width of the popover (depending on the container!) */
+    max-width: 100%;
+}
+
+.div_img{
+	position: relative;
+}
+
+.div_icon{
+	position: absolute;
+}
+
+.storyboard{
+	width: 900px;
 }
 </style>
 </head>
@@ -304,22 +341,72 @@ $(function () {
     	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     		<div class="resume-content">
     		
-    		
-    		
     		<div class="subheading mb-3">마이페이지_신체정보관리</div>
 			<table class="table table-bordered">
 				<tr>
-					<td colspan="2"><div><img style="width:100%" src="img/geogym/마이페이지1.png"/></div></td>
+					<td colspan="2">
+					<div class="div_img">
+					<img class="storyboard" src="img/지오짐 마이페이지 유저.png"/>
+					
+					<div class="div_icon" style="top:6%;left:24%">
+					<a id="popover1_1" data-toggle="popover" title="- 회원이 저장한 해당 회원의 프로필사진 조회<br>- 세션에 저장 되어있는 user_no로 조회함">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:6%;left:51%">
+					<a id="popover1_2" data-toggle="popover" title="- 회원 혹은 담당 트레이너가 저장한 해당 회원의 신체정보 및 회원정보 조회<br>- 세션에 저장 되어있는 user_no로 가장 최근의 신체정보만 조회함">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:6%;left:75%">
+					<a id="popover1_3" data-toggle="popover" title="- 프로필사진 변경<br>- commons-fileupload 사용<br>- 프로필사진 테이블에 user_no와 함께 저장됨">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:32%;left:29%">
+					<a id="popover1_4" data-toggle="popover" title="- 신체정보의 변화랑을 한눈에 볼 수 있는 차트<br>- 7일 혹은 30일 단위로 조회 가능<br>- Localdate 타입 사용 / 구글 차트 API 사용">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
 				</tr>
+			</table>
+			
+			<br>
+			
+			<div class="subheading mb-3">트레이너 전용 페이지_담당 회원 정보 관리</div>
+			<table class="table table-bordered">
 				<tr>
-					<td colspan="2"><div><img style="width:100%" src="img/geogym/마이페이지2.png"/></div></td>
+					<td colspan="2"><div><img style="width:700px" src="img/지오짐 마이페이지 트레이너.png"/></div></td>
 				</tr>
+			</table>	
+			
+			<br>
+			
+			<div class="subheading mb-3">Inbody 이미지 조회 팝업</div>
+			<table class="table table-bordered">
 				<tr>
-					<td colspan="2"><div><img style="width:100%" src="img/geogym/마이페이지3.png"/></div></td>
+					<td colspan="2"><div><img style="width:700px" src="img/지오짐 마이페이지 인바디.png"/></div></td>
 				</tr>
+			</table>
+			
+			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:350px" src="img/geogym/마이페이지4.png"/></div></td>
-					<td><div><img style="width:350px" src="img/geogym/마이페이지5.png"/></div></td>
+					<td><div><img style="width:350px" src="img/지오짐 마이페이지 팝업1.png"/></div></td>
+					<td><div><img style="width:350px" src="img/지오짐 마이페이지 팝업2.png"/></div></td>
+				</tr>
+			</table>
+			
+			
+			<table class="table table-bordered">
+				<tr>
+					<td><div><img style="width:350px" src="img/지오짐 반응형웹.png"/></div></td>
+					<td><div><img style="width:350px" src="img/지오짐 반응형웹2.png"/></div></td>
 				</tr>
 				<tr>
 					<td colspan="2"><strong>화면 설명</strong><br>
@@ -335,7 +422,7 @@ $(function () {
 						1. 업로드한 프로필사진 노출( commons_fileupload 사용 )<br>
 						2. 회원 개인 정보 노출<br>
 						3. 신체 변화량 7일단위 / 30일단위로 노출. LocalDate타입을 사용해 선택 단위마다 한건씩 조회해 차트에 반영( 구글차트API사용 )
-						<a id="popover1_1" data-toggle="popover"><strong style="color:#bd5d38;cursor:pointer;text-decoration: underline">해당기능 주요코드</strong></a><br>
+						<br>
 						4. 조회된 결과가 차트로 노출됨. 키 정보는 slide토글을 사용해 가리기 가능<br>
 						5. 트레이너가 담당중인 회원의 프로필 사진 노출( commons_fileupload 사용 )<br>
 						6. 담담중인 회원의 신체정보외에도 해당 회원의 특이사항 노출( 트레이너만 확인 가능 )<br>
@@ -351,7 +438,7 @@ $(function () {
 			<div class="subheading mb-3">반응형웹</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/반응형웹1.png"/></div></td>
+					<td><div><img style="width:700px" src="img/geogym/반응형웹1.png"/></div></td>
 				</tr>
 				<tr>
 					<td colspan="2"><strong>화면 설명</strong><br>
@@ -371,13 +458,13 @@ $(function () {
 			<div class="subheading mb-3">게시판</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/게시판1.png"/></div></td>
+					<td><div><img style="width:700px" src="img/geogym/게시판1.png"/></div></td>
 				</tr>
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/게시판2.png"/></div></td>
+					<td><div><img style="width:700px" src="img/geogym/게시판2.png"/></div></td>
 				</tr>
 				<tr>
-					<td><div><img style="width:100%" src="img/geogym/게시판3.png"/></div></td>
+					<td><div><img style="width:700px" src="img/geogym/게시판3.png"/></div></td>
 				</tr>
 				<tr>
 					<td><strong>화면 설명</strong><br>
@@ -492,12 +579,12 @@ $(function () {
     				<table class="table table-bordered">
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 클다 게시판.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 클다 게시판.png"/></div>
     						</td>
     					</tr>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 클다 댓글.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 클다 댓글.png"/></div>
     						</td>
     					</tr>
     				</table>
@@ -506,32 +593,32 @@ $(function () {
     				<table>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판1.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판1.png"/></div>
     						</td>
     					</tr>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판2.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판2.png"/></div>
     						</td>
     					</tr>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판3.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판3.png"/></div>
     						</td>
     					</tr>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 게시판4.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판4.png"/></div>
     						</td>
     					</tr>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 댓글.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 댓글.png"/></div>
     						</td>
     					</tr>
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/bangcops/방캅스 시다 메인.png"/></div>
+    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 메인.png"/></div>
     						</td>
     					</tr>
     				</table>
