@@ -56,6 +56,83 @@ $(function () {
         content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/신체정보 주요 코드.png" class="media-object" alt="Sample Image"></div>'
     });
 	
+	$('#popover2_1[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/유저의 정보 조회.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover2_2[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"></div>'
+    });
+	
+	$('#popover2_3[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/이미지 업로드.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover2_4[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/데이터 입력.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover2_5[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/데이터 삭제.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover2_6[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/키정보 슬라이드 토글.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover3_1[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/inbody 이미지 조회.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover4_1[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/데이터 입력.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover4_2[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/이미지 업로드.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover5_1[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/반응형 리스트.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover5_2[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/반응형 차트.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
 	
 	
     })
@@ -344,7 +421,7 @@ $(function () {
     		<div class="subheading mb-3">마이페이지_신체정보관리</div>
 			<table class="table table-bordered">
 				<tr>
-					<td colspan="2">
+					<td>
 					<div class="div_img">
 					<img class="storyboard" src="img/지오짐 마이페이지 유저.png"/>
 					
@@ -382,7 +459,48 @@ $(function () {
 			<div class="subheading mb-3">트레이너 전용 페이지_담당 회원 정보 관리</div>
 			<table class="table table-bordered">
 				<tr>
-					<td colspan="2"><div><img style="width:700px" src="img/지오짐 마이페이지 트레이너.png"/></div></td>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/지오짐 마이페이지 트레이너.png"/>
+					
+					<div class="div_icon" style="top:3%;left:48%">
+					<a id="popover2_1" data-toggle="popover" title="- 담당 회원의 신체정보<br>- 신체정보 테이블과 특이사항 테이블을 조인한 후 파라미터로 넘겨받은 user_no로 조회">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:3%;left:66%">
+					<a id="popover2_2" data-toggle="popover" title="- 해당 회원의 특이사항<br>- 트레이너만 열람 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:19%;left:24%">
+					<a id="popover2_3" data-toggle="popover" title="- 담당 회원의 신체 정보가 담긴 inbody 이미지 업로드<br>- 업로드시 현재 페이지에 조회된 신체정보의 키값과 연동하여 DB에 저장<br>- commons-fileupload 사용">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:19%;left:54%">
+					<a id="popover2_4" data-toggle="popover" title="- 담당 회원의 신체 정보 입력<br>- 하루에 한번만 입력 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:19%;left:70%">
+					<a id="popover2_5" data-toggle="popover" title="- 입력한 신체정보 삭제<br>- 가장 최신 신체정보만 삭제됨">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:25%;left:23%">
+					<a id="popover2_6" data-toggle="popover" title="- 키 정보를 노출할지 말지 결정하는 버튼<br>- 버튼 클릭시 가리기 / 나타내기 작동">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
 				</tr>
 			</table>	
 			
@@ -391,106 +509,114 @@ $(function () {
 			<div class="subheading mb-3">Inbody 이미지 조회 팝업</div>
 			<table class="table table-bordered">
 				<tr>
-					<td colspan="2"><div><img style="width:700px" src="img/지오짐 마이페이지 인바디.png"/></div></td>
-				</tr>
-			</table>
-			
-			<table class="table table-bordered">
-				<tr>
-					<td><div><img style="width:350px" src="img/지오짐 마이페이지 팝업1.png"/></div></td>
-					<td><div><img style="width:350px" src="img/지오짐 마이페이지 팝업2.png"/></div></td>
-				</tr>
-			</table>
-			
-			
-			<table class="table table-bordered">
-				<tr>
-					<td><div><img style="width:350px" src="img/지오짐 반응형웹.png"/></div></td>
-					<td><div><img style="width:350px" src="img/지오짐 반응형웹2.png"/></div></td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>화면 설명</strong><br>
-						<p>첫번째 : 회원이면 누구나 사용 가능한 마이페이지<br>
-						두번째 : 트레이너 전용 담당회원 관리 페이지<br>
-						세번째 : 첨부한 inbody 사진 팝업<br>
-						네번째 : 신체정보입력 폼 및 파일첨부 팝업</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>구현기능설명</strong><br>
-						<p>
-						1. 업로드한 프로필사진 노출( commons_fileupload 사용 )<br>
-						2. 회원 개인 정보 노출<br>
-						3. 신체 변화량 7일단위 / 30일단위로 노출. LocalDate타입을 사용해 선택 단위마다 한건씩 조회해 차트에 반영( 구글차트API사용 )
-						<br>
-						4. 조회된 결과가 차트로 노출됨. 키 정보는 slide토글을 사용해 가리기 가능<br>
-						5. 트레이너가 담당중인 회원의 프로필 사진 노출( commons_fileupload 사용 )<br>
-						6. 담담중인 회원의 신체정보외에도 해당 회원의 특이사항 노출( 트레이너만 확인 가능 )<br>
-						7. 트레이너가 첨부한 담당회원의 inbody 사진 팝업으로 노출<br>
-						8. 신체정보 입력 폼( 하루에 한번만 입력 가능 )<br>
-						9. 회원의 특이사항 입력 폼( 트레이너만 입력 및 조회가 가능 / 트레이너일 경우에만 노출 )<Br>
-						10. 해당 회원 inbody 사진 업로드 가능( 하루에 한번만 입력 가능 )
-						</p>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/지오짐 마이페이지 인바디.png"/>
+					
+					<div class="div_icon" style="top:4%;left:13%">
+					<a id="popover3_1" data-toggle="popover" title="- 첨부된 inbody 이미지 팝업으로 노출<br>- 여러장의 이미지를 업로드 할 수 있도록 ArrayList 타입으로 객체 생성">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
 					</td>
 				</tr>
 			</table>
+			
 			<br>
-			<div class="subheading mb-3">반응형웹</div>
+			
+			<div class="subheading mb-3">신체정보 입력 팝업 / 파일 업로드 팝업</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:700px" src="img/geogym/반응형웹1.png"/></div></td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>화면 설명</strong><br>
-						<p>스마트폰 액정 크기에 맞춰 레이아웃이 반응하는 마이페이지 및 트레이너 전용 담당회원 관리 페이지</p>
+					<td>
+					<div class="div_img">
+					<img style="width:450px" src="img/지오짐 마이페이지 팝업1.png"/>
+					
+					<div class="div_icon" style="top:20%;left:15%">
+					<a id="popover4_1" data-toggle="popover" title="- 신체정보 입력 폼<br>- 트레이너가 입력할 경우 아래 특이사항 입력폼도 노출됨">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
 					</td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>구현기능설명</strong><br>
-						<p>
-						1. 현재 사용중인 디스플레이 해상도에 맞춰 반응하는 반응형 웹 구현<br>
-						2. 차트 역시 해상도 크기에 맞춰 크기 변경
-						</p>
+					
+					<td>
+					<div class="div_img">
+					<img style="width:450px" src="img/지오짐 마이페이지 팝업2.png"/>
+					
+					<div class="div_icon" style="top:21%;left:5%">
+					<a id="popover4_2" data-toggle="popover" title="- inbody 이미지 업로드 팝업<br>- commons-fileupload 사용">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
 					</td>
 				</tr>
 			</table>
+			
 			<br>
-			<div class="subheading mb-3">게시판</div>
+			
+			<div class="subheading mb-3">반응형 웹</div>			
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:700px" src="img/geogym/게시판1.png"/></div></td>
-				</tr>
-				<tr>
-					<td><div><img style="width:700px" src="img/geogym/게시판2.png"/></div></td>
-				</tr>
-				<tr>
-					<td><div><img style="width:700px" src="img/geogym/게시판3.png"/></div></td>
-				</tr>
-				<tr>
-					<td><strong>화면 설명</strong><br>
-						<p>상단 : QnA 게시판 게시글 목록<br>
-						중단 : 게시글 상세보기<br>
-						하단 : 게시글 작성</p>
+					<td>
+					<div class="div_img">
+					<img style="width:450px" src="img/지오짐 반응형웹.png"/>
+					
+					<div class="div_icon" style="top:8%;left:4%">
+					<a id="popover5_1" data-toggle="popover" title="- Bootstrap을 사용한 반응형 웹 페이지">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
+					
+					<td>
+					<div class="div_img">
+					<img style="width:450px" src="img/지오짐 반응형웹2.png"/>
+					
+					<div class="div_icon" style="top:32%;left:16%">
+					<a id="popover5_2" data-toggle="popover" title="- 스마트폰 해상도에 반응<br>- 차트크기 및 레이아웃 위치 변경">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
 					</td>
 				</tr>
+			</table>
+			
+			<br>
+			
+			<div class="subheading mb-3">QnA 게시판 목록</div>
+			<table class="table table-bordered">
 				<tr>
-					<td><strong>구현기능설명</strong><br>
-						<p>
-						1. 한 페이지당 10개씩 게시글 노출<br>
-						2. 질문글 작성시 비공개로 설정했을 경우<br>
-						3. 질문글 작성시 공개글로 설정했을 경우<br>
-						4. 10페이지씩 이동 가능하도록 페이지네이션 구현<br>
-						5. 제목, 작성자, 내용으로 검색 가능<br>
-						6. 글 작성자일 경우에만 수정 / 삭제 가능<br>
-						7. 사이트 관리자 or 트레이너일 경우 댓글 형식으로 답글 작성 가능<br>
-						8. 답변 작성시 사진 첨부 가능<br>
-						9. CKEditor로 게시글 작성 구현<br>
-						10. 질문글 작성시에도 사진 첨부 가능<br>
-						11. 글 작성시 공개여부 설정 가능
-						</p>
-					</td>
+					<td><div><img class="storyboard" src="img/지오짐 QnA List.png"/></div></td>
 				</tr>
-			</table>    	
+			</table>
+			
+			<br>
+			
+			<div class="subheading mb-3">QnA 게시글 상세보기</div>
+			<table class="table table-bordered">
+				<tr>
+					<td><div><img class="storyboard" src="img/지오짐 QnA view.png"/></div></td>
+				</tr>
+			</table>
+			
+			<br>
+			
+			<div class="subheading mb-3">QnA 게시글 작성</div>
+			<table class="table table-bordered">
+				<tr>
+					<td><div><img class="storyboard" src="img/지오짐 QnA write.png"/></div></td>
+				</tr>
+			</table>
+				
     	</div>
     	</div>
     	</div>
