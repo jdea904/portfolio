@@ -932,55 +932,171 @@ $(function () {
     		<div class="subheading mb-3">메인페이지</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:700px" src="img/bangcops/방캅스 - 메인페이지.png"/></div></td>
-				</tr>
-				<tr>
-					<td colspan=""><strong>화면 설명</strong><br>
-						<p>사이트 메인페이지 및 하단 통계</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan=""><strong>구현기능설명</strong><br>
-						<p>
-						1. 시/구/상세주소로 검색 가능하게 구현, 검색시 신고 게시판의 검색 List로 자동으로 이동후 결과 노출<br>
-						2. 검색창 하단 통계(오늘의 신고건수, 전체 신고건수) 노출<br>
-						3. 구 별 신고건수 현황은 구글 차트 API를 활용하여 구현함. 신고테이블을 구 별로 GROUP BY 하여 COUNT 한 결과가 차트에 반영됨 
-						</p>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/방캅스 - 메인페이지.png"/>
+					
+					<div class="div_icon" style="top:26%;left:21%">
+					<a id="popover9_1" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:49%;left:35%">
+					<a id="popover9_2" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:36%;left:62%">
+					<a id="popover9_3" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
 					</td>
 				</tr>
 			</table>
+			
 			<br>
-			<div class="subheading mb-3">커뮤니티</div>
+			
+			<div class="subheading mb-3">커뮤니티 메인 페이지</div>
 			<table class="table table-bordered">
 				<tr>
-					<td><div><img style="width:700px" src="img/bangcops/방캅스 - 커뮤니티 메인.png"/></div></td>
-				</tr>
-				<tr>
-					<td><div><img style="width:700px" src="img/bangcops/방캅스 - 게시판3.png"/></div></td>
-				</tr>
-				<tr>
-					<td><strong>화면 설명</strong><br>
-						<p>상단 : 사이트 전체의 커뮤니티 현황을 볼 수 있는 커뮤니티 메인페이지<br>
-						하단 : 게시글 목록 페이지와 상세보기 페이지</p>
-					</td>
-				</tr>
-				<tr>
-					<td><strong>구현기능설명</strong><br>
-						<p>
-						1. 각 게시판마다 key값을 부여해 여러 게시판을 쉽게 구현 할 수 있도록 함<br>
-						2. 공지사항은 최신순으로 상위 다섯개를 노출하고 자유게시판, 이용후기게시판은 추천순으로 다섯개 노출<br>
-						3. 게시판목록은 20개씩 나열하도록 구현<br>
-						4. 추천은 추천한 회원의 ID로 COUNT하여 중복 추천이 불가능 하도록 구현<br>
-						5. 제목, 작성자, 내용으로 검색 가능<br>
-						6. 현재 페이지 기준 최대 10개의 페이지로 이동할 수 있게 페이지네이션 구현<br>
-						7. 추천은 AJAX를 사용하여 추천시 추천 해제가 가능하도록 구현<br>
-						8. 글 작성시 파일첨부 가능 및 파일 다운로드도 가능(commons-fileupload 사용)<br>
-						9. 게시글 작성자일 경우에만 수정 / 삭제 접근 가능
-						</p>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/방캅스 커뮤니티 메인.png"/>
+					
+					<div class="div_icon" style="top:36%;left:5%">
+					<a id="popover10_1" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:55%;left:5%">
+					<a id="popover10_2" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
 					</td>
 				</tr>
 			</table>
-
+			
+			<br>
+			
+			<div class="subheading mb-3">게시판 목록 페이지</div>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/방캅스 자유게시판 목록.png"/>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover11_1" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover11_2" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover11_3" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover11_4" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover11_5" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
+				</tr>
+			</table>
+			
+			<br>
+			
+			<div class="subheading mb-3">게시글 상세보기 페이지</div>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/방캅스 게시글 상세보기.png"/>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover12_1" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover12_2" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover12_3" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover12_4" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
+				</tr>
+			</table>
+			
+			<div class="subheading mb-3">게시글 작성 페이지</div>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/방캅스 게시글 작성.png"/>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover13_1" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover13_2" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:81%;left:0%">
+					<a id="popover13_3" data-toggle="popover" title="- 공개여부 설정 체크박스<br>- 게시글 작성시 공개여부 설정 가능">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
+				</tr>
+			</table>
+			
     	</div>
     	</div>
     	</div>
