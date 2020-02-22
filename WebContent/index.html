@@ -352,7 +352,33 @@ $(function () {
 					+'</div>'
     });
 	
+	$('#popover14_1[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover click',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/bangcops/codes/방캅스 주요코드 지도.png" class="media-object" alt="Sample Image"></div>'
+    });
 	
+	$('#popover14_2[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover click',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/bangcops/codes/방캅스 주요코드 크롤링.png" class="media-object" alt="Sample Image"></div>'
+    });
+	
+	$('#popover14_3[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover click',
+        html : true,
+        content : '<div style="width:content-fit" class="media"></div>'
+    });
+	
+	$('#popover15_1[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover click',
+        html : true,
+        content : '<div style="width:content-fit" class="media"><img src="img/geogym/codes/구글 지도 지오짐.png" class="media-object" alt="Sample Image"></div>'
+    });
 	
 	
     })
@@ -404,7 +430,7 @@ $(function () {
           <a class="nav-link js-scroll-trigger" href="#Project1">Project1_Summary</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Project1_Diagrams">Project1_Diagrams</a>
+          <a class="nav-link js-scroll-trigger" href="#Project1_Diagrams">Project1_ERD</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#Project1_Storyboard">Project1_Storyboards</a>
@@ -413,7 +439,7 @@ $(function () {
           <a class="nav-link js-scroll-trigger" href="#Project2">Project2_Summary</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Project2_Diagrams">Project2_Diagrams</a>
+          <a class="nav-link js-scroll-trigger" href="#Project2_Diagrams">Project2_ERD</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#Project2_Storyboard">Project2_Storyboards</a>
@@ -447,32 +473,99 @@ $(function () {
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+		
+		<div class="subheading mb-3">IDE</div>
+		<table>
+			<tr>
+				<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-laptop-code"> Eclipse&nbsp;IDE</i></li></ul></td>
+			</tr>
+		</table>
+		
+		<br>
+		
+        <div class="subheading mb-3">Programming Languages</div>
         <table>
         	<tr>
-        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-laptop-code"> Eclipse&nbsp;</i></li></ul></td>
-        		<td style="width: 302px;"><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-java"> JAVA&nbsp; </i></li></ul></td>
-        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-database"> Oracle DB&nbsp;</i></li></ul></td>
+        		
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-java"> JAVA&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-html5"> HTML5&nbsp; </i></li></ul></td>
         	</tr>
         	<tr>
-        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-database"> SQLite&nbsp;</i></li></ul></td>
-        		<td style="width: 302px;"><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-html5"> HTML5&nbsp; </i></li></ul></td>
         		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-css3"> CSS3&nbsp; </i></li></ul></td>
-        	</tr>
-        	<tr>
         		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-js"> JavaScript&nbsp; </i></li></ul></td>
-        		<td style="width: 302px;"><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-window-restore"> Spring&nbsp; </i></li></ul></td>
-        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-server"> JSP&nbsp; </i></li></ul></td>
         	</tr>
+        </table>
+        
+        <br>
+        
+        <div class="subheading mb-3">DBMS</div>
+        <table>
+        	<tr>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-database"> Oracle DB&nbsp;</i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-database"> SQLite&nbsp;</i></li></ul></td>        		
+        	</tr>
+        </table>
+        
+        <br>
+        
+        <div class="subheading mb-3">Frameworks</div>
+        <table>
+        	<tr>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-window-restore"> Spring&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-window-restore"> Mybatis3&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-window-restore"> Bootstrap&nbsp; </i></li></ul></td>
+        	</tr>
+        </table>
+        
+        <br>
+        
+        <div class="subheading mb-3">Servers</div>
+        <table>
+        	<tr>	
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-server"> JSP&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-server"> Apache Tomcat&nbsp; </i></li></ul></td>
+        	</tr>
+        </table>
+        
+        <br>
+        
+        <div class="subheading mb-3">Libraries</div>
+        <table>
+        	<tr>        		
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-book"> JQuery&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-angular"> AJAX&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-book"> Jsoup&nbsp; </i></li></ul></td>
+        	</tr>
+        </table>
+        
+        <br>
+        
+        <div class="subheading mb-3">API</div>
+        <table>
+        	<tr>        		
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-google"> Google Maps&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-google"> Google Charts&nbsp; </i></li></ul></td>
+        	</tr>
+        </table>
+        <table>
+        	<tr>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-cat"> Commons-Fileupload&nbsp; </i></li></ul></td>
+        	</tr>
+        </table>
+        <table>
+        	<tr>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-edit"> CKEditor&nbsp; </i></li></ul></td>
+        	</tr>
+        </table>
+        
+        <br>
+        
+        <div class="subheading mb-3">tools</div>
+        <table>
         	<tr>
         		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-github"> Git&nbsp; </i></li></ul></td>
-        		<td style="width: 302px;"><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-book"> JQuery&nbsp; </i></li></ul></td>
-        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-angular"> AJAX&nbsp; </i></li></ul></td>
-        	</tr>
-        	<tr>
-        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-window-restore"> Bootstrap&nbsp; </i></li></ul></td>
-        		<td colspan="2"><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-server"> Apache Tomcat&nbsp; </i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-database"> SQLdeveloper&nbsp;</i></li></ul></td>
+        		<td><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fas fa-database"> DBbrowser&nbsp;</i></li></ul></td>
         	</tr>
         </table>
       
@@ -490,37 +583,29 @@ $(function () {
             <div class="subheading mb-3">가상의 중/대형 규모의 헬스장을 상정하고 <br>홍보와 운영을 겸한 헬스장 홈페이지 및 솔루션을 구축한다.</div>
             <br>
             
-            <h5 class="mb-0">개발환경</h5>
+            <h5>개발환경</h5>
             <p> 운영체제 : window10, Debian<br>
  				서버 : Apache Tomcat 9.0<br>
  				DBMS : SQLite<br>
  				프레임워크 : Spring MVC framework 5.2.2, Spring Tool Suite 3, MyBatis3, Bootstrap<br>
- 				라이브러리 :  jQuery, AJAX<br>
+ 				라이브러리 :  jQuery, AJAX, commons<br>
  				개발언어 : JAVA(JDK1.8), HTML5/CSS, JavaScript, JSP/Servlet, SQL<br>
  				개발도구 : Eclipse, eXERD, draw.io, Git, DBbrowser</p>
  			<br>
  				
-            <h5 class="mb-0">구현기능</h5>
-            <p>1. 로그인(구글로 로그인) / 회원가입(정규식, 비밀번호 암호화, 이메일 인증)<br>
-				2. QnA 게시판(공개여부설정, 댓글, 답변 조회수 노출, 검색 가능)<br>
-				3. 마이페이지(개인프로필과 신체정보 노출 및 구글차트API를 활용한 신체 변화량 노출)<br>
-				4. 트레이너 전용 담당회원 관리 페이지<br>
-				5. 결제기능(카카오페이 API)<br>
-				6. 달력을 이용한 스케쥴 관리<br>
+            <h5>구현기능</h5><p style="color:#bd5d38">강조 표시된 부분 : 본인 담당 파트</p>
+            <p>1. <strong style="color:#585858">마이페이지(개인프로필과 신체정보 노출 및 구글차트API를 활용한 신체 변화량 노출)</strong> <br>
+				2. <strong style="color:#585858">트레이너 전용 담당회원 관리 페이지 </strong><br>
+				3. <strong style="color:#585858">반응형웹 구현(부트스트랩 이용)</strong><br>
+				4. <strong style="color:#585858">QnA 게시판(공개여부설정, 댓글, 답변 조회수 노출, 검색 가능)</strong><br>
+				5. <strong style="color:#585858">파일 업로드 / 다운로드</strong><br>
+				6. <strong style="color:#585858">지도(구글 지도 API)</strong><br>
 				7. 알림 기능<br>
 				8. 관리자 페이지(소속 트레이너 스케쥴 관리, 회원 정보 관리 등)<br>
-				9. 구글 지도 API<br>
-				10. 반응형웹 구현(부트스트랩 이용) </p>
-			<br>	
-            
-            <h5 class="mb-0">담당역할</h5>
-            <p>1. 마이페이지<br>
-				2. 트레이너전용 담당회원 관리 페이지<br>
-				3. 반응형웹(담당페이지만)<br>
-				4. QnA 게시판<br>
-				5. 파일 업로드 / 다운로드</p>
-			<br>	
-
+				9. 결제기능(카카오페이 API)<br>
+				10. 로그인(구글로 로그인) / 회원가입(정규식, 비밀번호 암호화, 이메일 인증)<br>
+				11. 달력을 이용한 스케쥴 관리</p>
+			<br>		
 			
 			<h5>참여소감</h5>
 			<p>
@@ -550,78 +635,14 @@ $(function () {
     
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="Project1_Diagrams">
     <div class="w-100">
-    		<h2 class="mb-5">Project1_Diagrams</h2>
+    		<h2 class="mb-5">Project1_ERD</h2>
     	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-    		<div class="resume-content">
+    		<div class="resume-content">   		
     		
-    			<div class="subheading mb-3">ERD</div>
     				<table class="table table-bordered">
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/지오짐 ERD 큰버전.png"/></div>
-    						</td>
-    					</tr>
-    				</table>
-    			<br>
-    			<div class="subheading mb-3">Class Diagram</div>
-    				<table class="table table-bordered">
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 클다 바디인포.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 클다 파일첨부.png"/></div>
-    						</td>
-    					</tr>
-    				</table>
-    				<br>
-    			<div class="subheading mb-3">Sequence Diagram</div>
-    				<table>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 담당 회원 정보 조회.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 마이페이지 신체정보 조회.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 담당 회원 차트 조회.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 담당 회원 차트 조회(30일).png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 신체 정보 입력.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 신체정보 삭제.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 프로필 사진 첨부.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 inbody 사진 조회.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:100%" src="img/geogym/지오짐 시다 inbody 사진 첨부.png"/></div>
+    							<div><img style="width:900px" src="img/지오짐 ERD 큰버전2.png"/></div>
     						</td>
     					</tr>
     				</table>
@@ -813,6 +834,26 @@ $(function () {
 			
 			<br>
 			
+			<div class="subheading mb-3">안내 페이지_지도</div>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/geogym/구글 지도.png"/>
+					
+					<div class="div_icon" style="top:11%;left:33%">
+					<a id="popover15_1" data-toggle="popover" title="- 구글 지도 API<br>- 헬스장 위치에 마커 표시함">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
+				</tr>
+			</table>
+			
+			<br>
+			
 			<div class="subheading mb-3">QnA 게시판 목록</div>
 			<table class="table table-bordered">
 				<tr>
@@ -937,32 +978,27 @@ $(function () {
             <div class="subheading mb-3">고객이 참여하고, 신고할 수 있는 허위 매물 근절 웹사이트를 구축한다.</div>
             <br>
             
-            <h5 class="mb-0">개발환경</h5>
+            <h5>개발환경</h5>
             <p>  운영체제 : window10<br>
  				서버 : Apache Tomcat 9.0<br>
  				DBMS : oracle 11g<br>
  				프레임워크 : Bootstrap<br>
- 				라이브러리 : jQuery, AJAX<br>
+ 				라이브러리 : jQuery, AJAX, jsoup, commons<br>
  				개발언어 : JAVA(JDK1.8), HTML5/CSS, JavaScript, JSP/Servlet, SQL<br>
  				개발도구 : Eclipse, eXERD, draw.io, Git, sqldeveloper</p>
  			<br>
  				
-            <h5 class="mb-0">구현기능</h5>
-            <p>1. 구글 지도 API<br>
-				2. 구글 차트 API<br>
-				3. 키워드를 포함한 뉴스기사 크롤링<br>
-				4. 회원가입( 정규식, 이메일 인증 ) / 로그인<br>
-				5. 게시판( 목록, 작성, 검색, 수정, 삭제, 조회수, 추천, 댓글 )<br>
-				6. 관리자 페이지( 회원 목록, 게시판 목록, 다중삭제 )<br>
+            <h5>구현기능</h5><p style="color:#bd5d38">강조 표시된 부분 : 본인 담당 파트</p>
+            <p>1. <strong style="color:#585858">구글 지도 API</strong><br>
+				2. <strong style="color:#585858">구글 차트 API</strong><br>
+				3. <strong style="color:#585858">키워드를 포함한 뉴스기사 크롤링</strong><br>
+				4. <strong style="color:#585858">파일 업로드 / 다운로드</strong><br>
+				5. <strong style="color:#585858">게시판( 목록, 작성, 검색, 수정, 삭제, 조회수, 추천, 댓글 )</strong><br>
+				6. 회원가입( 정규식, 이메일 인증 ) / 로그인<br>
 				7. 마이페이지( 모아보기, 정보수정 )<br>
-				8. 고객상담 1:1채팅 API (채널톡)</p>
-			<br>
-				
-            <h5 class="mb-0">담당역할</h5>
-            <p>1. 게시판( 자유,후기,공지사항,FAQ )<br>
-				2. 메인페이지<br>
-				3. 파일 업로드 / 다운로드
-				</p>
+				8. 고객상담 1:1채팅 API (채널톡)<br>
+				9. 관리자 페이지( 회원 목록, 게시판 목록, 다중삭제 )<br>
+				10. 매물 신고 기능</p>
 			<br>
 			
 			<h5>참여소감</h5>
@@ -991,66 +1027,18 @@ $(function () {
     
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="Project2_Diagrams">
     <div class="w-100">
-    		<h2 class="mb-5">Project2_Diagrams</h2>
+    		<h2 class="mb-5">Project2_ERD</h2>
     	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     		<div class="resume-content">
     		
-    			<div class="subheading mb-3">ERD</div>
     				<table class="table table-bordered">
     					<tr>
     						<td>
-    							<div><img style="width:100%" src="img/방캅스 ERD.png"/></div>
+    							<div><img style="width:900px" src="img/방캅스 ERD.png"/></div>
     						</td>
     					</tr>
     				</table>
-    			<br>
-    			<div class="subheading mb-3">Class Diagram</div>
-    				<table class="table table-bordered">
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 클다 게시판.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 클다 댓글.png"/></div>
-    						</td>
-    					</tr>
-    				</table>
-    				<br>
-    			<div class="subheading mb-3">Sequence Diagram</div>
-    				<table>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판1.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판2.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판3.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 게시판4.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 댓글.png"/></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td>
-    							<div><img style="width:700px" src="img/bangcops/방캅스 시다 메인.png"/></div>
-    						</td>
-    					</tr>
-    				</table>
+    			
     		</div>
     	</div>
     </div>
@@ -1065,9 +1053,40 @@ $(function () {
     	
     	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     		<div class="resume-content">
+
+    		<div class="subheading mb-3">홈페이지</div>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+					<div class="div_img">
+					<img class="storyboard" src="img/bangcops/방캅스 홈.png"/>
+					
+					<div class="div_icon" style="top:9%;left:25%">
+					<a id="popover14_1" data-toggle="popover" title="- 구글 지도 API 사용<br>- 각 구마다 마커 표시<br>- 마커에 마우스 오버시 해당 구의 허위매물 정보를 팝오버 형식으로 노출<br>- 신고게시판에 신고시 자동으로 지도에 구 별로 count한 결과 반영">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:46%;left:23%">
+					<a id="popover14_2" data-toggle="popover" title="- 뉴스기사 크롤링<br>- Jsoup 사용<br>- 동아일보 정치 기사에서 '부동산'으로 검색시 나열되는 기사 목록을 크롤링함">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					<div class="div_icon" style="top:63%;left:49%">
+					<a id="popover14_3" data-toggle="popover" title="- 각 게시판 정보 미리보기<br>- 커뮤니티 메인 페이지의 미니버전<br>">
+					<i class="fas fa-info-circle fa-2x" style="cursor:pointer"></i>
+					</a>
+					</div>
+					
+					</div>
+					</td>
+				</tr>
+			</table>
+			
+			<br>    		
     		
-    		
-    		<div class="subheading mb-3">메인페이지</div>
+    		<div class="subheading mb-3">검색 및 통계 페이지</div>
 			<table class="table table-bordered">
 				<tr>
 					<td>
@@ -1236,7 +1255,8 @@ $(function () {
 					</td>
 				</tr>
 			</table>
-			
+
+</div>
     	</div>
     	</div>
     	</div>
